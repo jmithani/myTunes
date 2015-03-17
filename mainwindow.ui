@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1021</width>
+      <height>671</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuPlaylists">
+     <property name="title">
+      <string>Playlists</string>
+     </property>
+     <addaction name="actionAdd_Playlist"/>
+     <addaction name="actionView_Playlists_2"/>
+    </widget>
+    <widget class="QMenu" name="menuLibrary">
+     <property name="title">
+      <string>Library</string>
+     </property>
+     <addaction name="actionAdd_Music"/>
+    </widget>
+    <addaction name="menuLibrary"/>
+    <addaction name="menuPlaylists"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Playlist">
+   <property name="text">
+    <string>Add Playlist</string>
+   </property>
+  </action>
+  <action name="actionView_Playlists">
+   <property name="text">
+    <string>View Playlists</string>
+   </property>
+  </action>
+  <action name="actionAdd_Music">
+   <property name="text">
+    <string>Add Music</string>
+   </property>
+  </action>
+  <action name="actionView_Playlists_2">
+   <property name="text">
+    <string>View Playlists</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
